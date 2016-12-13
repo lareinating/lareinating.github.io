@@ -118,7 +118,7 @@ a:active {
     color: #777;
 }
 
-.btn {    
+.btn {
     border-radius: 0;
 }
 
@@ -449,7 +449,7 @@ a:active {
     color: #fff;
 }
 .navbar-default.animated .navbar-nav > li.current > a {
-    color: #82c25a;
+    color: #d6b161;
 }
 #hero-area .navbar-default .navbar-nav {
     padding-top: 11px;
@@ -500,7 +500,7 @@ a:active {
 }
 #hero-area .block p {
     color: #fff;
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
 }
@@ -686,18 +686,27 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
     About start
 --*/
 
+.grey {
+  background: rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  margin-top:20px;
+  padding-bottom:20px;
+}
+
 #work h3 {
   font-size: 26px !important;
   font-weight: 300;
   line-height: 36px;
-  color: #7e7e7e;
+  color: #d6b161;
+  letter-spacing: 5px;
   margin-top: 20px;
 }
 #work .heading p {
     font-size: 18px;
     color: #898989;
 }
-#work .block p {
+#work .block p,
+#hackathons p {
     font-size: 15px;
     color: #7e7e7e;
     line-height: 30px;
@@ -718,6 +727,21 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
   display:flex;
   justify-content:center;
   text-align: center;
+}
+
+#hackathons .center-row {
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+
+#hackathons h3{
+   font-size: 26px !important;
+  font-weight: 300;
+  line-height: 36px;
+  color: #d6b161;
+  letter-spacing: 5px;
+  margin-top: 20px;
 }
 
 
@@ -839,7 +863,7 @@ hr {
 
 .input-field label {
     color: rgba(237, 28, 36, 0.7);
-} 
+}
 .form-group .input-field + .input-field {
     margin-top: 20px;
 }
