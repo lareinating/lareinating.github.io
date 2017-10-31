@@ -338,13 +338,38 @@ a:active {
 }
 
 .prize {
-    border: 1px solid rgba(0,0,0,0.2);
+    background: #F9564F;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    margin-top: 25px;
+}
+
+.design {
     padding: 10px;
     margin: 10px;
     width: 50%;
     color: rgba(0,0,0,0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 30px; 
+    background: #80CED7; 
+}
+
+.design a {
+    color: white;
 }
 
 #hero-area {
@@ -757,6 +782,9 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
   margin-top: 20px;
 }
 
+.bottom {
+  display:none;
+}
 
 
 .init-slider .owl-dots {
