@@ -98,4 +98,8 @@ px      68    160    252    */
   #contact .block textarea {
     width: 100%;
   }
+
+  #work .center-row, #hackathons .center-row {
+    display: block;
+  }
 }
