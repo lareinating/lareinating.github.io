@@ -21,6 +21,112 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- Responsive Stylesheet -->
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+  .Avatar img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .HeaderText {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+
+  .AvatarContainer {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .Header {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 54px;
+    padding: 10px;
+  }
+
+  .HeaderCta {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: 15px;
+  }
+
+  a.ViewProfileButton, a.FollowButton {
+    background-color: #0095f6;
+    background-color: rgba(var(--d69,0,149,246),1);
+    border-radius: 3px;
+    color: #fff;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 5px 12px;
+    text-decoration: none;
+  }
+
+  .EmbeddedMediaImage{
+    max-width:100%;
+    max-height:100%;
+  }
+
+  .instagram {
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+  }
+  </style>
+
 </head>
 
 <body id="body">
@@ -28,6 +134,63 @@
 	    <!--
 	    Header start
 	    ==================== -->
+      <div class="modal fade" id="myModal" role="dialog" displayed="false" style="display:none;">
+      <div class="modal-dialog" style="width:300px;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="border:none;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+
+           <div class="widget-title"><h2 class="title">Let's connect!</h2></div>
+
+           <div class="instagram">
+            <div class="Header">
+              <div class="AvatarContainer">
+                <a class="Avatar" href="https://www.instagram.com/lareinating/" target="_blank">
+                  <img src="https://instagram.fsin7-1.fna.fbcdn.net/v/t51.2885-19/s150x150/59998079_601686897018298_15860171762827264_n.jpg?_nc_ht=instagram.fsin7-1.fna.fbcdn.net&amp;_nc_ohc=aeVavTM0nIsAX_eumNO&amp;oh=5b89318047f9bbc93b2f0d669be3b593&amp;oe=5F52A582">
+                </a>
+              </div>
+              <div class="HeaderText">
+                <a class="Username" href="https://www.instagram.com/lareinating" target="_blank" style="color:black;">
+                  <span class="UsernameText">lareinating</span>
+                  
+                </a>
+              </div>
+              <div class="HeaderCta">
+        
+                <a class="ViewProfileButton" href="https://www.instagram.com/lareinating" data-ios-link="user?username=lareinating" target="_blank">
+                  Follow
+                </a>
+              </div>
+            </div>
+
+            <div class="Content EmbedFrame" style="">
+              <a class="EmbeddedMedia" href="https://www.instagram.com/p/B9yjFwHg9R1/?utm_source=ig_embed" data-ios-link="media?id=2266027889411740789" target="_blank">
+                <img class="EmbeddedMediaImage" alt="Instagram post shared by @lareinating" src="https://instagram.fsin7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/89741191_209391086945624_7459426096018534789_n.jpg?_nc_ht=instagram.fsin7-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=H05xYDg-FtwAX-kZ3nm&amp;oh=a4b3e98e38908ba268473606602440e5&amp;oe=5F534A42" srcset="https://instagram.fsin7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/89741191_209391086945624_7459426096018534789_n.jpg?_nc_ht=instagram.fsin7-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=H05xYDg-FtwAX-kZ3nm&amp;oh=6497c56de879bdd3d2716663ab5c304f&amp;oe=5F51F4C2 640w,https://instagram.fsin7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/89741191_209391086945624_7459426096018534789_n.jpg?_nc_ht=instagram.fsin7-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=H05xYDg-FtwAX-kZ3nm&amp;oh=a4b3e98e38908ba268473606602440e5&amp;oe=5F534A42 750w,https://instagram.fsin7-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/89741191_209391086945624_7459426096018534789_n.jpg?_nc_ht=instagram.fsin7-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=H05xYDg-FtwAX-kZ3nm&amp;oh=164c84e22292c2c15ba6a343c708df2a&amp;oe=5F533977 1080w">
+                
+              </a>
+            </div>
+           </div>
+           
+          </div>
+         
+        </div>
+
+      </div>
+    </div>
+    <script>
+      $(window).scroll(function() {
+       if ($(document).scrollTop() > 500 && $("#myModal").attr("displayed") === "false") {
+        console.log("HERREEE")
+         $('#myModal').modal('show');
+         $("#myModal").attr("displayed", "true");
+       }
+     });
+    </script>
+
 	    <div class="navbar-default navbar-fixed-top" id="navigation">
        <div class="container">
          <!-- Brand and toggle get grouped for better mobile display -->
@@ -91,21 +254,12 @@
                     <h3>RAKUTEN | VIKI iOS</h3>
                   </div>
                   <div class="block">
-                    <p><b>Scope</b> | Developed new features on Viki and Soompi iOS App.</p> 
+                    <p><b>Scope</b> | Developed new features on Soompi and Viki iOS App.</p> 
                     <p><br/><b>Technologies</b> | Swift </p><br/>
-
-                    <p><b>Viki's WWDC Features </b> <br/> 
-                      Represented Viki during WWDC (Apple Worldwide Developers Conference) for media events.
-                      <br/>
-                      <a target="_blank" href="https://podcasts.apple.com/sg/podcast/23-episode-23-how-to-create-app-live-from-apples-wwdc/id1373591175?i=1000440922259">The Bite by Esquire (Podcast) </a><br/> 
-                      <a target="_blank" href="https://sg.news.yahoo.com/not-just-boys-club-talking-000234418.html">Women In Tech</a></p>
-                    <br/>
+                    <p><b>Soompi </b> <br/> A platform that provides the latest korean celebrities news updates. <br/> <a target="_blank" href="https://itunes.apple.com/us/app/soompi-kpop-kdrama-news/id1065452158?mt=8">Soompi App</a></p></p> 
   
-                    <p><b>Viki - Learn Mode (iOS) </b> <br/> Enabling users to learn languages with the integration of dictionary, pronouncation,  segmentations, and subtitle pairings on their iOS devices. <br/> <a target="_blank" href="https://itunes.apple.com/us/app/viki-asian-tv-dramas-movies/id445553058">Learn Mode on Viki iOS App</a><br/> <a target="_blank" href="http://bit.ly/2fqdWQP">Learn Mode on Viki Web</a></p> 
-
                     <br/>
-
-                    <p><b>Soompi (iOS) </b> <br/> A platform that provides the latest korean celebrities news updates. <br/> <a target="_blank" href="https://itunes.apple.com/us/app/soompi-kpop-kdrama-news/id1065452158?mt=8">Soompi iOS App</a></p></p> 
+                    <p><b>Viki - Learn Mode </b> <br/> Enabling users to learn languages with the integration of dictionary, pronouncation,  segmentations, and subtitle pairings. <br/> <a target="_blank" href="https://itunes.apple.com/us/app/viki-asian-tv-dramas-movies/id445553058">Viki App</a><br/> <a target="_blank" href="http://bit.ly/2fqdWQP">Learn Mode on Viki Web</a></p>
                   </div>
                 </div>
               </div>
@@ -142,7 +296,7 @@
                     <p><br/><b>Technologies</b> | Javascript, HTML5, CSS, Jasmine.js  </p><br/>
                     <p><b>Viki</b> <br/> Global TV site where millions of people discover, watch and subtitle global primetime shows and movies in more than 200 languages. </p>
                     <br/>
-                    <p><b>Viki - Learn Mode (Web) </b> <br/> Enabling users to learn languages with the integration of dictionary, pronouncation,  segmentations, and subtitle pairings. <br/> <a target="_blank" href="http://bit.ly/2fqdWQP">Learn Mode on Viki</a></p>
+                    <p><b>Viki - Learn Mode </b> <br/> Enabling users to learn languages with the integration of dictionary, pronouncation,  segmentations, and subtitle pairings. <br/> <a target="_blank" href="http://bit.ly/2fqdWQP">Learn Mode on Viki</a></p>
                     <br/>
                     <p><b>Featured on: </b> <br/> <a target="_blank" href="https://www.theverge.com/2017/9/28/16379568/viki-learn-mode-chinese-taiwanese-korean-dramas">The Verge</a> <br/>
                     <a target="_blank" href="https://www.soompi.com/2017/04/12/vikis-learn-mode-will-take-language-learning-new-level/">Soompi</a><br/>
